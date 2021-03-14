@@ -6,17 +6,20 @@ public class Main {
             int bonus = transfer / bonusStep;
             balance += transfer + bonus;
             System.out.println("Пополнение на " + transfer + " рублей");
-            System.out.println("Так держать! Вы получили " + bonus + " бонусных рублей на свой счет.");
-            System.out.println("Сумма вашего баланса " + balance + " рублей. Скорей беги звонить маме по межгороду и возвращайся назад!\n");
+            System.out.println("Отлично! Вы получили " + bonus + " бонусных рублей на свой счет.");
+            System.out.println("Сумма вашего баланса " + balance + " рублей.\n");
+
         } else {
             balance += transfer;
             System.out.println("Пополнение на " + transfer + " рублей");
-            System.out.println("Ты получаешь 0 бонусов :(");
-            System.out.println("Баланс твоего счета всего лишь " + balance + " жалких рублей. В следующий раз старайся лучше!\n");
+            System.out.println("Вы получаете 0 бонусов. ");
+            System.out.println("Баланс вашего счета равен " + balance + " рублей. \n");
+
         }
     }
-    public static void main(String[] args){
-        offer(100,1000);
+
+    public static void main(String[] args) {
+        offer(100, 1100);
         offer(100, 100);
     }
 }
