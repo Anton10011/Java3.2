@@ -1,9 +1,9 @@
-public class Main {
+﻿public class Main {
     public static void offer(int balance, int transfer) {
-        int bonusStep = 100;
+        int BonusStep = 100;
         int threshold = 1000;
         if (transfer >= threshold) {
-            int bonus = transfer / bonusStep;
+            int bonus = transfer / BonusStep;
             balance += transfer + bonus;
             System.out.println("Пополнение на " + transfer + " рублей");
             System.out.println("Отлично! Вы получили " + bonus + " бонусных рублей на свой счет.");
@@ -14,7 +14,6 @@ public class Main {
             System.out.println("Пополнение на " + transfer + " рублей");
             System.out.println("Вы получаете 0 бонусов. ");
             System.out.println("Баланс вашего счета равен " + balance + " рублей. \n");
-
         }
     }
 
@@ -23,4 +22,3 @@ public class Main {
         offer(100, 100);
     }
 }
-
